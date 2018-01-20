@@ -13,7 +13,7 @@
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "webhook": "forever sendgrid_webhook.sh"
+    "webhook": "forever sendgrid_webhook.js"
   },
   "author": "",
   "license": "ISC",
